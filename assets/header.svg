@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 200" width="900" height="200" role="img" aria-label="Rishi Choudhary - MCA Student, DevOps and Full-Stack Learner">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0db7ed"/>
+      <stop offset="1" stop-color="#5835cc"/>
+    </linearGradient>
+  </defs>
+  <style>
+    .name { font-family: "Segoe UI", Helvetica, Arial, sans-serif; font-size: 50px; font-weight: 700; fill: #fff; animation: fade 1.5s ease-out both; }
+    .sub  { font-family: "Segoe UI", Helvetica, Arial, sans-serif; font-size: 18px; fill: #e6edf3; animation: fade 2.2s ease-out both; }
+    @keyframes fade { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
+  </style>
+
+  <rect width="900" height="200" fill="url(#g)"/>
+
+  <!-- back wave -->
+  <path fill="#ffffff" opacity="0.15" d="M0 150 Q 112.5 115 225 150 T 450 150 T 675 150 T 900 150 T 1125 150 T 1350 150 T 1575 150 T 1800 150 V200 H0 Z">
+    <animateTransform attributeName="transform" type="translate" from="0 0" to="-900 0" dur="10s" repeatCount="indefinite"/>
+  </path>
+  <!-- front wave -->
+  <path fill="#ffffff" opacity="0.25" d="M0 165 Q 112.5 135 225 165 T 450 165 T 675 165 T 900 165 T 1125 165 T 1350 165 T 1575 165 T 1800 165 V200 H0 Z">
+    <animateTransform attributeName="transform" type="translate" from="-900 0" to="0 0" dur="7s" repeatCount="indefinite"/>
+  </path>
+
+  <text class="name" x="450" y="88" text-anchor="middle">Rishi Choudhary</text>
+  <text class="sub" x="450" y="122" text-anchor="middle">MCA Student  |  DevOps &amp; Full-Stack Learner</text>
+</svg>
