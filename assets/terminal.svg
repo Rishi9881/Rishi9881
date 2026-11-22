@@ -28,7 +28,7 @@
 
   <!-- lines (wipe-in typing effect) -->
   <text x="24" y="72" clip-path="url(#c1)"><tspan fill="#3fb950">$ </tspan><tspan fill="#e6edf3">whoami</tspan></text>
-  <text x="24" y="100" clip-path="url(#c2)" fill="#0db7ed">Rishi Choudhary · MCA @ Parul University · Vadodara</text>
+  <text x="24" y="100" clip-path="url(#c2)" fill="#0db7ed">Rishi Choudhary </text>
 
   <text x="24" y="136" clip-path="url(#c3)"><tspan fill="#3fb950">$ </tspan><tspan fill="#e6edf3">cat stack.txt</tspan></text>
   <text x="24" y="164" clip-path="url(#c4)" fill="#a371f7">Docker · Terraform · Jenkins · ArgoCD · Go · React</text>
