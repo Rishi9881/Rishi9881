@@ -1,7 +1,7 @@
 <!-- Header banner (animated wave) -->
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0db7ed,100:5835CC&height=200&section=header&text=Rishi%20Choudhary&fontSize=50&fontColor=ffffff&animation=fadeIn&fontAlignY=38&desc=MCA%20Student%20%7C%20DevOps%20%26%20Full-Stack%20Learner&descAlignY=60&descSize=18" alt="header"/>
+<img src="https://raw.githubusercontent.com/Rishi9881/Rishi9881/main/assets/header.svg" alt="header" width="100%"/>
 
 <!-- Typing animation -->
 <a href="https://git.io/typing-svg">
@@ -83,6 +83,6 @@
 
 <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=16&pagination=false&speed=60&color=5835CC&center=true&vCenter=true&width=500&lines=Open+to+DevOps+%26+Cloud+internships+%F0%9F%92%BC;Let's+build+something+together+%E2%9C%A8" alt="footer typing" />
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:5835CC,100:0db7ed&height=120&section=footer" alt="footer"/>
+<img src="https://raw.githubusercontent.com/Rishi9881/Rishi9881/main/assets/footer.svg" alt="footer" width="100%"/>
 
 </div>
