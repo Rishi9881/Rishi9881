@@ -1,0 +1,84 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 930 250" width="930" height="250" role="img" aria-label="Animated CI/CD pipeline: Code, Git, Build, Image, Deploy, Monitor">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0d1117"/>
+      <stop offset="1" stop-color="#161b22"/>
+    </linearGradient>
+    <filter id="glow" x="-200%" y="-200%" width="500%" height="500%">
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <style>
+    text { font-family: SFMono-Regular, Consolas, "Liberation Mono", Menlo, monospace; }
+    .box { fill: #161b22; stroke: #30363d; stroke-width: 2; animation: pulse 6s infinite; }
+    .b0 { animation-delay: -0.15s; }
+    .b1 { animation-delay: 1.05s; }
+    .b2 { animation-delay: 2.25s; }
+    .b3 { animation-delay: 3.45s; }
+    .b4 { animation-delay: 4.65s; }
+    .b5 { animation-delay: 5.85s; }
+    @keyframes pulse {
+      0%   { stroke: #30363d; fill: #161b22; }
+      3%   { stroke: #0db7ed; fill: #0b2b3b; }
+      14%  { stroke: #30363d; fill: #161b22; }
+      100% { stroke: #30363d; fill: #161b22; }
+    }
+    .label { fill: #e6edf3; font-size: 16px; font-weight: 700; text-anchor: middle; }
+    .sub   { fill: #8b949e; font-size: 12px; text-anchor: middle; }
+  </style>
+
+  <!-- card -->
+  <rect x="1" y="1" width="928" height="248" rx="14" fill="url(#bg)" stroke="#30363d" stroke-width="2"/>
+
+  <!-- title + live indicator -->
+  <text x="30" y="40" fill="#8b949e" style="font-size:13px;letter-spacing:3px">CI/CD PIPELINE</text>
+  <circle cx="860" cy="36" r="5" fill="#3fb950">
+    <animate attributeName="opacity" values="1;0.2;1" dur="1.5s" repeatCount="indefinite"/>
+  </circle>
+  <text x="872" y="40" fill="#3fb950" style="font-size:12px;letter-spacing:2px">LIVE</text>
+
+  <!-- main flow line -->
+  <line x1="150" y1="110" x2="780" y2="110" stroke="#0db7ed" stroke-width="2" stroke-dasharray="6 6" opacity="0.7">
+    <animate attributeName="stroke-dashoffset" from="24" to="0" dur="1s" repeatCount="indefinite"/>
+  </line>
+
+  <!-- feedback loop -->
+  <path d="M 840 160 C 840 235, 90 235, 90 160" fill="none" stroke="#a371f7" stroke-width="2" stroke-dasharray="6 6" opacity="0.7">
+    <animate attributeName="stroke-dashoffset" from="24" to="0" dur="1s" repeatCount="indefinite"/>
+  </path>
+  <text x="465" y="204" fill="#a371f7" style="font-size:12px;letter-spacing:2px" text-anchor="middle">FEEDBACK LOOP</text>
+
+  <!-- stages -->
+  <rect class="box b0" x="30"  y="85" width="120" height="50" rx="10"/>
+  <rect class="box b1" x="180" y="85" width="120" height="50" rx="10"/>
+  <rect class="box b2" x="330" y="85" width="120" height="50" rx="10"/>
+  <rect class="box b3" x="480" y="85" width="120" height="50" rx="10"/>
+  <rect class="box b4" x="630" y="85" width="120" height="50" rx="10"/>
+  <rect class="box b5" x="780" y="85" width="120" height="50" rx="10"/>
+
+  <text class="label" x="90"  y="116">Code</text>
+  <text class="label" x="240" y="116">Git</text>
+  <text class="label" x="390" y="116">Build</text>
+  <text class="label" x="540" y="116">Image</text>
+  <text class="label" x="690" y="116">Deploy</text>
+  <text class="label" x="840" y="116">Monitor</text>
+
+  <text class="sub" x="90"  y="154">Go · React</text>
+  <text class="sub" x="240" y="154">GitHub</text>
+  <text class="sub" x="390" y="154">Jenkins · Actions</text>
+  <text class="sub" x="540" y="154">Docker</text>
+  <text class="sub" x="690" y="154">ArgoCD</text>
+  <text class="sub" x="840" y="154">Grafana</text>
+
+  <!-- forward packet -->
+  <circle r="7" fill="#0db7ed" filter="url(#glow)">
+    <animateMotion dur="6s" repeatCount="indefinite" path="M 90 110 L 840 110"/>
+  </circle>
+
+  <!-- return packet -->
+  <circle r="6" fill="#a371f7" filter="url(#glow)">
+    <animateMotion dur="6s" repeatCount="indefinite" path="M 840 160 C 840 235, 90 235, 90 160"/>
+  </circle>
+</svg>
